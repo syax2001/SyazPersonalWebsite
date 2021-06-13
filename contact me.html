@@ -1,0 +1,117 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact Me</title>
+<h1>Contact Me Page</h1>
+<link rel="stylesheet" href="stylecontactme.css">
+
+<script language= "JavaScript">
+function validateForm(){
+    var name = document.forms["contactform"]["contacterName"].value;
+    var telephone = document.forms["contactform"]["telenumber"].value;
+    var email = document.forms["contactform"]["email"].value;
+    var rate = document.forms["contactform"]["rate"].value;
+    var anime = document.forms["contactform"]["myAnime"].value;
+    var anime = document.forms["contactform"]["myAnime"].value;
+    var message = document.forms["contactform"]["message"].value;
+    var submit = document.forms["contactform"]["submit"].value;
+
+    if(name == ""){
+        alert("You Forgot Your Name!!!");
+        return false;
+    }
+
+    if(telephone == ""){
+        alert("You Forgot Your Telephone Number! It's easy, it start with 0");
+        return false;
+    }
+
+    if(email == ""){
+        alert("You Forgot Your Email Address! Who doesn't have one these days? :/");
+        return false;
+    }
+
+    if(rate == ""){
+        alert("You Forgot to Rate My Website!");
+        return false;
+    }
+
+    if(anime == ""){
+        alert("You Forgot to Choose if you like anime or not.");
+        return false;
+    }
+
+    if(message == ""){
+        alert("You Forgot Your Message! You trolling me is it?");
+        return false;
+    }
+
+    if(submit == "Send"){
+        alert("Thank you for Contacting Me!");
+        return false;
+    }
+
+}
+
+</script>
+</head>
+
+<body>
+    <div class="topnav">
+        <ul>
+            <li><a href="myskills.html">My Skills</a></li>
+            <li><a href="about me.html">About Me</a></li>
+            <li><a class="active" href="contact me.html">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <center>
+    <div class="box">
+        <form name="contactform" method="post" action="register.asp" onsubmit="return validateForm()">
+            <input type="text" placeholder="Enter Name" name="contacterName" style="margin-top: 30px;"> <br>
+             
+            <input type="text" placeholder="Enter Telephone Number" name="telenumber" id="telenumber"> <br>
+ 
+            <input type="text" placeholder="Enter Email Address" name="email" id="email"> <br>
+ 
+            Rate My Website (5 Being the Best &#x1F609) : <select name="rate">
+                <option value="1">1
+                <option value="2">2
+                <option value="3">3
+                <option value="4">4
+                <option value="5">5
+                </select> <br><br> 
+            
+            Do you like anime? &#x1F914<br>
+            <input type="radio" name="myAnime" value= "Yes">Yes
+            <input type="radio" name="myAnime" value= "No">No <br><br> 
+
+            Check your favourite webpages (You may check more than 1 &#x1F601) <br> 
+    	    <input type="checkbox" name="hp">Homepage
+	        <input type="checkbox" name="ms">My Skills
+	        <input type="checkbox" name="am">About Me
+            <input type="checkbox" name="cm">Contact Me
+            <input type="checkbox" name="nn">None &#x1F610 <br><br>
+
+            <textarea id="message" name="message" placeholder="Please write your message" style="height: 200px;"></textarea> <br>
+                
+            <input type="submit" name="submit" value="Send">
+        </form>
+    </div>
+    </center>
+
+
+
+    <div class="footer">
+        <div class="social-footer">
+            <div class="col"><a class="social-websites" href="https://www.facebook.com/mohammad.syazani.3" target="_blank">FACEBOOK</a></div>
+            <div class="col"><a class="social-websites" href="https://www.instagram.com/itsjust_syaz/" target="_blank">INSTAGRAM</a></div>
+            <div class="col"><a class="social-websites" href="https://www.youtube.com/channel/UCbkRLOlVOh_yOc4gMI4g1tg" target="_blank">YOUTUBE</a></div>
+            <div class="col"><a class="social-websites" href="https://api.whatsapp.com/send?phone=60178878595&text=%F0%9F%91%8B" target="_blank">WHATSAPP</a></div> 
+
+            <div class="copyright"><p>Copyright &copy; Mohammad Syazani</p></div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    font-family: Arial;
+    background-image: url(image/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
+}
+
+.websiteheader{
+    font-family: Lucida Calligraphy;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(111, 58, 196);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.topnav a {
+      float: center;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 12px 22px;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 10px;
+      transition-duration: 1s;
+}
+
+.topnav a:hover {
+      background-color: #ff0000;
+      color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+      background-color: #34b4c5;
+      color: white;
+}
+
+
+li {
+    display:inline;
+}
+
+
+.box{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    height: 480px;
+    width: 800px;
+    background-color:rgb(158, 255, 247);
+    border: 5px royalblue;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fontcontent{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: 700;
+}
+
+.tableanime {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.tp {
+    border : 2px solid black;
+    border-collapse: collapse;
+}
+
+.top_anime {
+    table-layout: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.top{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-align: center;
+}
+
+.coverimage{
+    height: 260px;
+    width: 200px;
+}
+
+.image{
+    position: relative;
+    height: 350px;
+    width: 300px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.image_theimage{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(78, 78, 78, 0.712);
+    color: white;
+    font-family: 'Times New Roman', Times;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+    backdrop-filter: blur(10px);
+}
+
+.image_overlay:hover{
+    opacity: 1;
+}
+
+#games{
+    text-align: center;
+}
+
+.tablegames{
+    border: 0;
+    
+}
+
+.imagepopup{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.imagepopup:hover{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+
+.favScenesAnime{
+    text-align: center;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.copyright{
+    float: right;
+    margin-right: 20px;
+}
+
+.social-footer {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.col{
+    display: inline-flex;
+}
+
+.social-websites {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    font: 13px "Lato",-apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 600;
+    color: rgba(224, 249, 255, 0.918);
+}
